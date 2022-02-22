@@ -1,0 +1,23 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local
+
+    tasks:
+
+      - name: "check ansible when statement"
+        shell: echo "$azure_storage_container is defined"
+        when: lookup('env', 'azure_storage_container') != ''
+        tags: always
+        
+        
+  #this is sample to check the pull request .
+
+
+i wanted to test out the feature that is present in the github desktop
+
+2nd functionality to check the code 
+isbijbisdiug
+asbdkjhaku
+aiubijdbs
+bijbakjds
